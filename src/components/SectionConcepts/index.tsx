@@ -6,7 +6,7 @@ import Heading from 'components/Heading'
 import * as S from './styles'
 import { SectionConcepts } from 'types/api'
 
-const SectionConcepts = ({ title, concepts }: SectionConcepts) => (
+const SectionConceptsComponent = ({ title, concepts }: SectionConcepts) => (
   <Container>
     <S.Box>
       <Heading lineBottom>{title}</Heading>
@@ -19,4 +19,4 @@ const SectionConcepts = ({ title, concepts }: SectionConcepts) => (
   </Container>
 )
 
-export default SectionConcepts
+export default SectionConceptsComponent
