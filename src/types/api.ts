@@ -41,10 +41,21 @@ export type SectionConcepts = {
   }>
 }
 
+export type SectionModule = {
+  title: string
+  modules: Array<{
+    id: string
+    title: string
+    subtitle: string
+    description: string
+  }>
+}
+
 export type LandingPageProps = {
   logo: ImageProps
   header: HeaderProps
   section: SectionProps
   sectionTech: SectionTechProps
   sectionConcepts: SectionConcepts
+  sectionModule: SectionModule
 }
