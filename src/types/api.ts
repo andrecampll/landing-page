@@ -51,6 +51,11 @@ export type SectionModule = {
   }>
 }
 
+export type SectionAgenda = {
+  title: string
+  description: string
+}
+
 export type LandingPageProps = {
   logo: ImageProps
   header: HeaderProps
@@ -58,4 +63,5 @@ export type LandingPageProps = {
   sectionTech: SectionTechProps
   sectionConcepts: SectionConcepts
   sectionModule: SectionModule
+  sectionAgenda: SectionAgenda
 }
