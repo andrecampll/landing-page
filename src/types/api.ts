@@ -69,6 +69,21 @@ export type PrincingBoxProps = {
   button: ButtonProps
 }
 
+export type SectionAboutUsProps = {
+  title: string
+  authors: Array<{
+    id: string
+    name: string
+    photo: ImageProps
+    role: string
+    description: string
+    socialLinks: Array<{
+      slug: string
+      link: string
+    }>
+  }>
+}
+
 export type LandingPageProps = {
   logo: ImageProps
   header: HeaderProps
@@ -78,4 +93,5 @@ export type LandingPageProps = {
   sectionModule: SectionModule
   sectionAgenda: SectionAgenda
   pricingBox: PrincingBoxProps
+  sectionAboutUs: SectionAboutUsProps
 }
